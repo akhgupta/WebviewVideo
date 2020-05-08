@@ -26,6 +26,8 @@ public class MyActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        getSupportActionBar().hide();
         customViewContainer = (FrameLayout) findViewById(R.id.customViewContainer);
         webView = (WebView) findViewById(R.id.webView);
 
